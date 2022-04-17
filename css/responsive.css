@@ -1,0 +1,124 @@
+@media (max-width: 1220px) {
+  .feature-head h4 {
+    font-size: 18px;
+  }
+}
+@media (max-width: 1120px) {
+  .feature-head h4 {
+    font-size: 16px;
+  }
+  .feature-head i {
+    margin-right: 5px;
+  }
+  .feature-content {
+    transform: translateY(70%);
+  }
+}
+@media (max-width: 991px) {
+  .container {
+    width: 98%;
+  }
+  .feature-content {
+    padding: 5px;
+  }
+  .feature-head {
+    margin-bottom: 8px;
+  }
+  .feature-head i {
+    margin-right: 5px;
+    font-size: 25px;
+  }
+  .feature-head h4 {
+    font-size: 14px;
+  }
+  .feature-content p {
+    font-size: 12px;
+    margin-bottom: 5px;
+    line-height: 1;
+  }
+  .feature-content {
+    transform: translateY(80%);
+  }
+  .text p {
+    font-size: 16px;
+  }
+  .service-wrapper {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .choose-wrapper {
+    grid-template-columns: 1fr;
+  }
+  .blog-wrapper {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+@media (max-width: 768px) {
+  .cta .container {
+    flex-direction: column;
+    gap: 10px;
+  }
+  .feature-wrapper {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .feature-content {
+    transform: translateY(82%);
+  }
+  .footer-wrapper {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  /* mobile menu  */
+  .nav-bar {
+    position: absolute;
+    top: 0;
+    right: -100%;
+    width: 30%;
+    height: 100vh;
+    background-color: #fa4251;
+    transition: 0.3s;
+  }
+  .nav-bar ul {
+    flex-direction: column;
+    margin-top: 20px;
+  }
+  .nav-bar ul li:hover > a {
+    color: #000;
+  }
+  .mobile-menu,
+  .nav-close {
+    display: block;
+  }
+  .nav-close {
+    color: #fff;
+    position: absolute;
+    top: 2%;
+    right: 2%;
+    font-size: 30px;
+    cursor: pointer;
+  }
+  .mobile-menu {
+    color: #fff;
+    font-size: 30px;
+    cursor: pointer;
+  }
+  .show {
+    right: 0;
+  }
+}
+@media (max-width: 576px) {
+  .feature-wrapper {
+    grid-template-columns: 1fr;
+  }
+  .feature-content {
+    transform: translateY(88%);
+  }
+  .service-wrapper {
+    grid-template-columns: 1fr;
+  }
+  .blog-wrapper {
+    grid-template-columns: 1fr;
+  }
+  .footer-wrapper {
+    grid-template-columns: 1fr;
+  }
+}
